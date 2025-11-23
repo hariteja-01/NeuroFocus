@@ -1,0 +1,28 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Orbitron:wght@500;700&family=Roboto+Mono:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+	font-family: 'Inter', 'Orbitron', 'Roboto Mono', sans-serif;
+	background: linear-gradient(135deg, #0f172a 60%, #00eaff22 100%);
+	min-height: 100vh;
+	color-scheme: dark;
+}
+
+body {
+	background: linear-gradient(135deg, #0f172a 60%, #00eaff22 100%);
+	backdrop-filter: blur(8px);
+}
+
+.dark body {
+	background: linear-gradient(135deg, #0f172a 60%, #00eaff22 100%);
+}
+
+/* Glassmorphism utility */
+.bg-glass {
+	background: rgba(255,255,255,0.08);
+	backdrop-filter: blur(8px);
+}
