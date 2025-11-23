@@ -12,15 +12,7 @@ export function PatientProfileCard({ patient }) {
   // };
 
   return (
-    <FuturisticCard className="flex items-center gap-6">
-      <div className="relative">
-        <img
-          src={patient.avatarUrl || '/avatar.png'}
-          alt="Avatar"
-          className="w-20 h-20 rounded-full border-4 border-neon-blue shadow-neon-blue object-cover"
-        />
-        <span className="absolute bottom-0 right-0 w-4 h-4 bg-neon-green rounded-full border-2 border-white animate-pulse"></span>
-      </div>
+    <FuturisticCard className="flex flex-col gap-4">
       <div>
         <div className="font-orbitron text-2xl text-neon-blue mb-1">{patient.name}</div>
         <div className="font-mono text-slate-400 text-xs mb-1">ID: {patient.id}</div>
